@@ -3,7 +3,9 @@ ArrayList<T>::ArrayList(int i)
     // TODO
     : buffer(nullptr), maxSize(i) 
     {
-        if (maxSize <= 0) maxSize = 100;
+        if (maxSize <= 0) {
+            maxSize = 100;
+        }
         this->length = 0;
         buffer = new T[maxSize];
 }
